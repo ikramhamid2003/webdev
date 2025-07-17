@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Libertinus Mono", monospace;
+      background: linear-gradient(to right, red, rgb(6, 146, 109));
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      display: flex;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 25px;
+      overflow: hidden;
+      border: 7px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-image {
+      flex: 1;
+      background: url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_700,h_657/https://www.intellspot.com/wp-content/uploads/2024/03/Male-user-fills-out-registration-form-in-a-smartphone-app.jpg') center/cover no-repeat;
+      min-height: 100%;
+    }
+
+    .form-section {
+      flex: 1;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      font-family: "Libertinus Mono", monospace;
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid gray;
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+    }
+    
+
+    .radio-group {
+      font-family: "Libertinus Mono", monospace;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    input[type="radio"] {
+      transform: scale(1.5);
+
+    }
+
+    .radio-group label {
+      font-family: "Libertinus Mono", monospace;
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+
+    .btn {
+      text-align: center;
+    }
+
+    button {
+      font-family: "Libertinus Mono", monospace;
+      padding: 12px 140px;
+      font-size: 25px;
+      border-radius: 25px;
+      background-color: lightgreen;
+      border: none;
+      color: darkolivegreen;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: mediumseagreen;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .form-image {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-image"></div>
+    <div class="form-section">
+      
+      <form action="11.html">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        </div>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male" required /> <strong>Male</strong></label>
+          <label><input type="radio" name="gender" value="female" required /><strong> Female</strong></label>
+        </div>
+        <div class="btn">
+          <button type="submit"><strong>Sign Up</strong></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
